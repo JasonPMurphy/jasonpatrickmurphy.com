@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jason Patrick Murphy</title>
+<meta name="description" content="Jason Patrick Murphy: radio documentary maker, sound artist and Associate Professor at the American University in Bulgaria. Prix Italia winner. Cork · Blagoevgrad.">
+<meta property="og:title" content="Jason Patrick Murphy">
+<meta property="og:description" content="Jason Patrick Murphy: radio documentary maker, sound artist and Associate Professor at the American University in Bulgaria. Prix Italia winner. Cork · Blagoevgrad.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jasonpatrickmurphy.com/">
+<meta property="og:image" content="https://jasonpatrickmurphy.com/media/out-recording.jpg">
+<link rel="canonical" href="https://jasonpatrickmurphy.com/">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&family=Archivo:wght@500;700;800&display=swap">
+<style>
+/* Layout: single editorial column; works as a log (year · title · outlet); a Route section traces Cork to Blagoevgrad; one waveform line as the signature. */
+:root {
+  color-scheme: dark;
+  --paper: #0E0F0F;
+  --ink: #E8E9E6;
+  --muted: #9A9F9C;
+  --rule: #2A2D2C;
+  --accent: #A9B9E2;
+  --mark: #1C2130;
+  --on-image: #F2F3F0;
+  --on-image-muted: rgba(242, 243, 240, 0.74);
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap > *:not(.masthead), .masthead-in { max-width: 880px; margin-inline: auto; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+.wrap > #wave { box-sizing: content-box; max-width: 832px; padding-inline: 0; width: calc(100% - 48px); }
+.masthead { position: relative; color: var(--on-image); background: #0b0c0c url("media/img-01.jpg") center 45% / cover no-repeat; }
+.masthead::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.12) 32%, rgba(0,0,0,0.2) 55%, rgba(0,0,0,0.6) 85%, var(--paper) 100%); pointer-events: none; }
+.masthead-in { position: relative; }
+.masthead .mark-name, .masthead h1, .masthead .lede { color: var(--on-image); }
+.masthead nav a, .masthead .eyebrow, .masthead .lede em { color: var(--on-image-muted); }
+.masthead nav a:hover { color: var(--on-image); }
+.masthead .listen-pill { color: var(--on-image); border-color: var(--on-image-muted); background: rgba(0,0,0,0.25); }
+.masthead .listen-pill .dot { background: var(--on-image); }
+.masthead .listen-pill .dot::after { border-left-color: #111; }
+.masthead .ph { background: rgba(255,255,255,0.14); color: var(--on-image); }
+.masthead .portrait { border: 3px solid var(--on-image); box-shadow: 0 6px 24px rgba(0,0,0,0.35); }
+.masthead .hero { padding-block: 96px 40px; }
+.masthead h1, .masthead .lede { text-shadow: 0 1px 12px rgba(0,0,0,0.35); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.ph { background: var(--mark); color: var(--accent); font-family: var(--mono); font-size: 0.8em; padding: 0.05em 0.35em; border-radius: 3px; white-space: nowrap; }
+
+header { padding-block: 28px 0; }
+.top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.mark-name { font-family: var(--display); font-size: 1.15rem; letter-spacing: 0.01em; color: var(--ink); }
+nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.875rem; }
+nav a { color: var(--muted); }
+nav a:hover { color: var(--ink); text-decoration: none; }
+
+.hero { padding-block: 72px 24px; display: grid; grid-template-columns: 1fr; gap: 48px; align-items: end; }
+.hero > div { min-width: 0; }
+.eyebrow { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.02; letter-spacing: -0.02em; margin: 14px 0 22px; text-wrap: balance; }
+.lede { font-family: var(--display); font-size: 1.3rem; line-height: 1.45; max-width: 36ch; margin: 0; text-wrap: pretty; }
+.lede em { color: var(--muted); }
+.listen-pill { margin-top: 22px; display: inline-flex; align-items: center; gap: 10px; font: 500 0.85rem var(--body); color: var(--ink); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 7px 16px 7px 10px; cursor: default; }
+.listen-pill .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--ink); display: grid; place-items: center; }
+.listen-pill .dot::after { content: ""; border-left: 7px solid var(--paper); border-top: 4.5px solid transparent; border-bottom: 4.5px solid transparent; margin-left: 2px; }
+.portrait { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 2px; background: #111; }
+#wave { display: block; width: 100%; height: 56px; margin-top: 8px; cursor: pointer; touch-action: none; }
+#wave:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+button.listen-pill { cursor: pointer; }
+.listen-pill .ptime { font-family: var(--mono); font-size: 0.75rem; opacity: 0.8; font-variant-numeric: tabular-nums; }
+.listen-pill.playing .dot::after { border: 0; margin-left: 0; width: 8px; height: 9px; background: linear-gradient(to right, #111 0 3px, transparent 3px 5px, #111 5px 8px); }
+
+section { padding-block: 56px; border-top: 1px solid var(--rule); }
+.sec-head { display: grid; grid-template-columns: 180px 1fr; gap: 32px; }
+.sec-head > * { min-width: 0; }
+h2 { font-family: var(--mono); font-weight: 400; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 6px 0 0; }
+h3 { font-family: var(--display); font-weight: 500; font-size: 1.35rem; line-height: 1.25; margin: 0; text-wrap: balance; }
+p { margin: 0; max-width: 64ch; }
+.stack { display: grid; gap: 18px; }
+
+.works { list-style: none; margin: 0; padding: 0; }
+.work { display: grid; grid-template-columns: 64px 1fr; gap: 20px; padding-block: 22px; border-bottom: 1px solid var(--rule); }
+.work:first-child { padding-top: 0; }
+.work:last-child { border-bottom: 0; padding-bottom: 0; }
+.work > div { min-width: 0; display: grid; gap: 6px; }
+.year { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); padding-top: 5px; font-variant-numeric: tabular-nums; }
+.meta { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); }
+.desc { font-size: 0.97rem; }
+.award { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.listen { font-size: 0.875rem; }
+h3 .sub { display: block; font-weight: 400; font-style: italic; font-size: 1rem; color: var(--muted); margin-top: 2px; }
+.wide-photo { margin: 0; display: grid; gap: 8px; }
+.wide-photo img { display: block; width: 100%; height: auto; max-width: 100%; border-radius: 2px; }
+.wide-photo figcaption { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+.clip { display: block; width: 100%; max-width: 220px; height: auto; aspect-ratio: 9 / 16; background: #000; border-radius: 2px; margin-block: 6px; }
+.closing-art { margin: 0 auto; padding-block: 8px 48px; display: grid; gap: 10px; }
+.closing-art img { display: block; width: 100%; height: auto; max-width: 100%; border-radius: 2px; }
+.closing-art figcaption { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em; color: var(--muted); }
+.poster-thumb { --s: 0.1037; position: relative; width: 100%; aspect-ratio: 1080 / 1350; overflow: hidden; border: 1px solid var(--rule); background: #1E1818; }
+.poster { position: absolute; left: 0; top: 0; width: 1080px; height: 1350px; transform: scale(var(--s)); transform-origin: top left; background: #1E1818; color: #F2EFEA; font-family: "Archivo", "Helvetica Neue", Arial, sans-serif; }
+.poster .poster-bg { position: absolute; inset: 0; width: 1080px; height: 1350px; max-width: none; object-fit: cover; object-position: left bottom; }
+.pz-top { position: absolute; left: 48px; top: 48px; width: 984px; display: flex; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid rgba(242,239,234,0.45); font-size: 20px; font-weight: 500; line-height: 1.35; }
+.pz-title { position: absolute; left: 42px; top: 140px; font-weight: 800; font-size: 224px; line-height: 0.84; letter-spacing: -0.05em; color: #EB0A11; }
+.pz-body { position: absolute; left: 552px; top: 830px; width: 480px; display: flex; flex-direction: column; gap: 18px; }
+.pz-tag { font-size: 34px; font-weight: 500; line-height: 1.12; letter-spacing: -0.015em; }
+.pz-rows { border-top: 1px solid rgba(242,239,234,0.45); font-size: 21px; }
+.pz-rows > div { display: grid; grid-template-columns: 1fr 2fr; padding: 9px 0; border-bottom: 1px solid rgba(242,239,234,0.25); }
+.pz-rows b { color: #EB0A11; font-weight: 700; }
+.pz-credits { display: flex; flex-direction: column; gap: 2px; font-size: 20px; line-height: 1.4; }
+.pz-credits i { font-style: normal; color: #CFC9C2; }
+.pz-credits .pz-small { margin-top: 6px; font-size: 17px; color: #CFC9C2; }
+.zoomable { cursor: zoom-in; }
+.zoomable:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.lb { position: fixed; inset: 0; z-index: 40; background: rgba(0,0,0,0.92); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: calc(56px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); cursor: zoom-out; }
+.lb[hidden] { display: none !important; }
+.lb-stage { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 0; flex: 1 1 auto; }
+.lb-img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 2px; }
+.lb-poster { position: relative; overflow: hidden; flex: none; }
+.lb-poster .poster { transform: scale(var(--ls)); }
+.lb-cap { font-family: var(--mono); font-size: 0.78rem; color: #C9CCC9; text-align: center; max-width: 60ch; }
+.lb-close { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: max(12px, env(safe-area-inset-right, 0px)); font: 500 0.85rem var(--body); color: #F2F3F0; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+.lb-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.teach-photo { margin: 0; display: grid; gap: 8px; max-width: 380px; }
+.teach-photo img { display: block; width: 100%; height: auto; max-width: 100%; border-radius: 2px; }
+.teach-photo figcaption { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+.with-thumb { display: grid; grid-template-columns: 1fr 112px; gap: 20px; align-items: start; }
+.with-thumb > * { min-width: 0; }
+.thumb { margin: 0; display: grid; gap: 6px; }
+.thumb img { display: block; width: 100%; height: auto; max-width: 100%; border: 1px solid var(--rule); }
+.thumb figcaption { font-family: var(--mono); font-size: 0.66rem; line-height: 1.35; color: var(--muted); }
+.group-label { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding-block: 28px 4px; border-bottom: 1px solid var(--rule); }
+.group-label:first-child { padding-top: 0; }
+
+/* Route: Cork to Blagoevgrad, a real sequence */
+.route { list-style: none; margin: 0; padding: 0; position: relative; display: grid; gap: 0; }
+.stop { display: grid; grid-template-columns: 18px 88px 1fr; gap: 14px; padding-block: 10px; align-items: baseline; }
+.stop > * { min-width: 0; }
+.pin { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--muted); background: var(--paper); justify-self: center; position: relative; top: 1px; }
+.stop.cork .pin { background: var(--accent); border-color: var(--accent); }
+.route::before { content: ""; position: absolute; left: 8.5px; top: 18px; bottom: 18px; width: 1px; background: var(--rule); }
+.place { font-family: var(--display); font-size: 1.08rem; }
+.stop.cork .place { color: var(--accent); }
+.what { color: var(--muted); font-size: 0.93rem; }
+.what b { color: var(--ink); font-weight: 500; }
+
+.items { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+.items li { display: grid; gap: 4px; }
+.items .t { font-family: var(--display); font-size: 1.12rem; }
+.items .s { color: var(--muted); font-size: 0.94rem; max-width: 62ch; }
+.status { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+
+.recog { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.recog li { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: baseline; }
+.recog .y { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.recog .k { font-family: var(--display); font-size: 1.05rem; }
+.recog .k span { color: var(--muted); font-family: var(--body); font-size: 0.88rem; }
+
+.contact-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.email { font-family: var(--display); font-size: 1.25rem; user-select: all; overflow-wrap: anywhere; }
+button.copy { font: 500 0.8rem var(--body); color: var(--ink); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+button.copy:hover { border-color: var(--ink); }
+.links { display: flex; gap: 22px; flex-wrap: wrap; font-size: 0.92rem; }
+
+footer { padding-block: 32px 48px; border-top: 1px solid var(--rule); font-size: 0.8rem; color: var(--muted); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 720px) {
+  .hero, .masthead .hero { grid-template-columns: 1fr; padding-block: 56px 28px; gap: 24px; }
+  .portrait { max-width: 150px; }
+  .sec-head { grid-template-columns: 1fr; gap: 20px; }
+  .work { grid-template-columns: 1fr; gap: 4px; }
+  .year { padding-top: 0; }
+  .stop { grid-template-columns: 18px 1fr; }
+  .stop .what { grid-column: 2; }
+  .with-thumb { grid-template-columns: 1fr 88px; gap: 14px; }
+  .poster-thumb { --s: 0.0815; }
+  nav { gap: 14px; }
+}
+
+/* In-place editor */
+.edbar { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 20; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; max-width: calc(100vw - 32px); }
+.edbar[hidden] { display: none !important; }
+.edbtn { font: 500 0.82rem var(--body); border-radius: 999px; padding: 8px 16px; cursor: pointer; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+.edbtn.primary { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+.edbtn:disabled { opacity: 0.55; cursor: default; }
+.edmsg { font: 400 0.8rem var(--body); color: var(--muted); background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 6px 10px; }
+.edmsg:empty { display: none; }
+html[data-editing] .ed { outline: 1px dashed var(--accent); outline-offset: 3px; cursor: text; border-radius: 2px; }
+html[data-editing] .ed:focus { outline-style: solid; outline-width: 2px; }
+html[data-editing] .ed.changed { background: var(--mark); }
+@media (prefers-reduced-motion: no-preference) { .edbtn { transition: background 0.15s, border-color 0.15s; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead"><div class="masthead-in">
+  <header>
+    <div class="top">
+      <a class="mark-name" href="#top">Jason Patrick Murphy</a>
+      <nav aria-label="Sections">
+        <a href="#works">Works</a><a href="#route">Route</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero" id="top">
+    <div>
+      <div class="eyebrow">Cork · Blagoevgrad</div>
+      <h1>Jason Patrick Murphy</h1>
+      <p class="lede">Audio documentary maker and sound artist. Associate Professor at the American University in Bulgaria. <em>Prix Italia, 2017.</em></p>
+      <button class="listen-pill" id="playBtn" type="button" aria-label="Play the opening sound"><span class="dot" aria-hidden="true"></span><span id="playLabel">Listen</span><span class="ptime" id="playTime">0:17</span></button>
+    </div>
+  </div>
+  </div></div>
+  <canvas id="wave" tabindex="0" role="slider" aria-label="Opening sound timeline. Click to play from any point." aria-valuemin="0" aria-valuemax="17" aria-valuenow="0"></canvas>
+
+  <section id="works">
+    <div class="sec-head">
+      <h2>Selected works</h2>
+      <ol class="works">
+        <li class="group-label" aria-hidden="true">Sound &amp; live</li>
+        <li class="work">
+          <span class="year">2027</span>
+          <div>
+            <span class="award">Upcoming · 3 February 2027</span>
+            <h3>Between Notes</h3>
+            <span class="meta">Djerassi Theatre, Blagoevgrad · 20:30 · 30 seats</span>
+            <div class="with-thumb">
+              <p class="desc">An immersive listening performance of live vinyl, field recordings and sound design.</p>
+              <figure class="thumb">
+                <div class="poster-thumb" role="img" aria-label="Instagram poster for Between Notes: the title in large red letters over a night sky, 3 February 2027, 20:30, Djerassi Theatre, Blagoevgrad">
+                <div class="poster" aria-hidden="true">
+                  <img src="media/between-notes-bg.jpg" alt="" class="poster-bg">
+                  <div class="pz-top"><div>An immersive<br>listening performance</div><div style="text-align:right">3 February 2027<br>Djerassi Theatre, Blagoevgrad</div></div>
+                  <div class="pz-title">Between<br>Notes</div>
+                  <div class="pz-body">
+                    <div class="pz-tag">Sit in the dark. Let the world move around you.</div>
+                    <div class="pz-rows">
+                      <div><b>Date</b><span>3/2/27</span></div>
+                      <div><b>Time</b><span>20.30</span></div>
+                      <div><b>Venue</b><span>Djerassi Theatre</span></div>
+                      <div><b>Tickets</b><span>30 seats · link in bio</span></div>
+                    </div>
+                    <div class="pz-credits"><div><b>Jason Murphy</b> <i>Creator &amp; DJ</i></div><div><b>Vera Arzumanyan</b> <i>Sound Design</i></div><div class="pz-small">Produced by Yaroslava Karboulewsky-Braustein<br>Audio engineering by Georgi Arzumanyan</div></div>
+                  </div>
+                </div>
+              </div>
+                <figcaption>Instagram poster</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2026</span>
+          <div>
+            <h3>Песента на Бистрица / Song of Bistritsa</h3>
+            <span class="meta">BNR · Live performance, Blagoevgrad</span>
+            <div class="with-thumb">
+              <p class="desc">A sound portrait of the river that runs past AUBG, recorded on foot from campus up to the Makedonia hut. Made with my Applied Audio class and premiered live for a full local audience.</p>
+              <figure class="thumb">
+                <img data-full="media/song-of-bistritsa-poster.jpg" src="media/img-02.jpg" width="140" height="198" alt="Poster for Бистришка песен: river rocks in the Bistritsa, Blagoevgrad, 30 April, 20:00">
+                <figcaption>Premiere poster · 30 April</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2026</span>
+          <div>
+            <h3>Ovid on the Train</h3>
+            <span class="meta">Éist Radio · selected by Béal Ó Bhéal</span>
+            <p class="desc">Experimental audio poetry on Ovid's exile to Tomis, with poet Oana Marian and sound designer Vera Arzumanyan.</p>
+            <a class="listen" href="https://eist.radio/archive/o-bheal-go-beal-2026-07-14/" target="_blank" rel="noopener">Listen on Éist Radio →</a>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2023</span>
+          <div>
+            <h3>Lake Voices <span class="sub">African Soundscape</span></h3>
+            <span class="meta">Eme Gallery, Blagoevgrad · BNR Blagoevgrad · RTÉ Lyric FM, Ambient Orbit</span>
+            <p class="desc">A soundscape of Rwanda in late 2022, recorded mostly on the shore of Lake Kivu by the Congo border and in the east near Tanzania. It ends with the songs of the night fishermen, who sing for bravery, strength and a safe return as they head out onto dark water.</p>
+            <video class="clip" controls playsinline preload="none" poster="media/lake-voices-video-still.jpg" width="540" height="960" aria-label="Short film from the African Soundscape premiere at Eme Gallery">
+              <source src="media/lake-voices.mp4" type="video/mp4">
+            </video>
+            <span class="listen"><a href="https://soundcloud.com/theboyjazz/rwanda-mixdown" target="_blank" rel="noopener">Listen on SoundCloud →</a> &nbsp; <a href="https://www.rte.ie/radio/lyricfm/ambient-orbit/programmes/2023/1009/1409720-ambient-orbit-monday-9-october-2023/" target="_blank" rel="noopener">Ambient Orbit →</a></span>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2023</span>
+          <div>
+            <h3>Undefined</h3>
+            <span class="meta">Sound design · Cork Midsummer Festival</span>
+            <div class="with-thumb">
+              <p class="desc">Sound design for <i>Undefined</i>, a new dance-theatre work by Andrea Williams, premiered at Dance Cork Firkin Crane.</p>
+              <figure class="thumb">
+                <img src="media/undefined-poster.jpg" width="140" height="175" alt="Poster for Undefined by Andrea Williams: a performer in dark paint amid teal smoke before a waterfall, 24 June, Dance Cork Firkin Crane, Cork Midsummer Festival">
+                <figcaption>Festival poster · 24 June</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="work">
+          <span class="year">2022</span>
+          <div>
+            <span class="award">Selected work</span>
+            <h3>Eulogy for a Sound at <i>Sound Experiences</i></h3>
+            <span class="meta">Audire conference · Braga, Portugal · 27–28 June 2022</span>
+            <div class="with-thumb">
+              <p class="desc">My lament for the Irish fog horn was selected for <i>Sound Experiences</i>, an international conference on memory, creativity and participation in sound, organised by the Audire project and CECS, the Communication and Society Research Centre.</p>
+              <figure class="thumb">
+                <img src="media/audire-poster-small.jpg" data-full="media/audire-poster.jpg" width="140" height="140" alt="Call-for-works poster for the Audire conference Sound Experiences, 27–28 June 2022, in green, black and white circles">
+                <figcaption>Conference poster</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="group-label" aria-hidden="true">Documentary &amp; reporting</li>
+        <li class="work">
+          <span class="year">2022</span>
+          <div>
+            <h3>From the Ukrainian border</h3>
+            <span class="meta">Irish radio · five-part daily series · fixer for RTÉ Television</span>
+            <p class="desc">Daily reports from the Polish–Ukrainian border in the first weeks of the full-scale invasion.</p>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2017</span>
+          <div>
+            <span class="award">Prix Italia · NYF Gold · PPI Gold</span>
+            <h3>No Time To Lose</h3>
+            <span class="meta">RTÉ Radio 1 · Doc on One · rebroadcast by BBC</span>
+            <p class="desc">Katie Cooke, a young Irish runner, lives with epilepsy and keeps racing long distance. Winner of the Prix Italia for Best Documentary.</p>
+            <a class="listen" href="https://www.rte.ie/radio/doconone/823855-rte-documentary-on-one-no-time-to-lose" target="_blank" rel="noopener">Listen on RTÉ Doc on One →</a>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2016</span>
+          <div>
+            <span class="award">NYF Gold · PPI Gold</span>
+            <h3>Open Verdict</h3>
+            <span class="meta">Irish radio · recorded in Australia, Argentina, USA and Ireland</span>
+            <p class="desc">The life and death in Ireland of the young Iranian writer Marsha Mehran.</p>
+            <a class="listen" href="https://www.rte.ie/radio/doconone/797981-an-open-verdict" target="_blank" rel="noopener">Listen on RTÉ Doc on One →</a>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2015</span>
+          <div>
+            <span class="award">Simon Cumbers Media Fund</span>
+            <h3>Malawi series</h3>
+            <span class="meta">Irish radio · five parts</span>
+            <p class="desc">Reporting from Malawi on the UN Development Goals and what they mean for young people.</p>
+            <a class="listen" href="https://soundcloud.com/theboyjazz/friday-young-women-final" target="_blank" rel="noopener">Listen on SoundCloud →</a>
+          </div>
+        </li>
+        <li class="work">
+          <span class="year">2011</span>
+          <div>
+            <h3>Eulogy for a Sound</h3>
+            <span class="meta">RTÉ Radio 1 · Doc on One</span>
+            <p class="desc">A lament for the Irish fog horn. Presented at the Audire conference <i>Sound Experiences</i>, Braga, 2022.</p>
+            <a class="listen" href="https://www.rte.ie/radio/doconone/646693-the-curious-ear-doconone-foghorns" target="_blank" rel="noopener">Listen on RTÉ Doc on One →</a>
+          </div>
+        </li>
+
+        <li class="group-label" aria-hidden="true">Community</li>
+        <li class="work">
+          <span class="year">2022–</span>
+          <div>
+            <h3>Mahala youth radio</h3>
+            <span class="meta">Radio AURA · funded by OSUN / CHRA, Bard College</span>
+            <p class="desc">Radio training for Roma young people from Blagoevgrad's Mahala, run with student research assistants.</p>
+            <a class="listen" href="https://chra.bard.edu/grants/" target="_blank" rel="noopener">About the grant →</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="route">
+    <div class="sec-head">
+      <h2>Route</h2>
+      <div class="stack">
+        <figure class="wide-photo">
+          <img data-full="media/out-recording.jpg" src="media/img-03.jpg" width="900" height="600" alt="Jason walking across rocks on a beach with a boom microphone, a white dog running ahead towards the sea">
+          <figcaption>Out recording.</figcaption>
+        </figure>
+        <ol class="route">
+          <li class="stop cork"><span class="pin"></span><span class="place">Cork</span><span class="what"><b>University College Cork</b>, Bachelor of Commerce, 2002</span></li>
+          <li class="stop"><span class="pin"></span><span class="place">Newcastle</span><span class="what">MA, University of Newcastle upon Tyne, 2003</span></li>
+          <li class="stop"><span class="pin"></span><span class="place">London</span><span class="what"><b>BBC Radio 4</b>, then back to Ireland as a daily current affairs producer</span></li>
+          <li class="stop"><span class="pin"></span><span class="place">West Clare</span><span class="what">Producer, then manager of <b>Raidió Corca Baiscinn</b>, a community station with 14 staff and 50 volunteers, 2011–14</span></li>
+          <li class="stop"><span class="pin"></span><span class="place">Limerick · Cape Town</span><span class="what">PhD at Mary Immaculate College, University of Limerick, with months reporting at <b>Bush Radio</b> in Cape Town, South Africa, 2014–18</span></li>
+          <li class="stop cork"><span class="pin"></span><span class="place">Cork</span><span class="what">Senior Lecturer in Journalism, <b>Griffith College Cork</b>, 2016–18</span></li>
+          <li class="stop"><span class="pin"></span><span class="place">Milan · Tokyo</span><span class="what">Prix Italia, 2017; masterclasses for journalists at <b>NHK</b>, 2018</span></li>
+          <li class="stop"><span class="pin"></span><span class="place">Blagoevgrad</span><span class="what">American University in Bulgaria, from 2018</span></li>
+          <li class="stop cork"><span class="pin"></span><span class="place">Cork</span><span class="what">Sound design for <b>Undefined</b>, Cork Midsummer Festival, 2023</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="sec-head">
+      <h2>Research</h2>
+      <ul class="items">
+        <li>
+          <span class="status">Book · in progress</span>
+          <span class="t">Bulgarian radio through Radio AURA</span>
+          <span class="s">A history of Bulgarian broadcasting told through Radio AURA, drawing on archives and interviews with the people who built it.</span>
+        </li>
+        <li>
+          <span class="status">Article · 2021</span>
+          <span class="t"><a href="https://doi.org/10.30935/ojcmt/11105" target="_blank" rel="noopener">Community Youth Radio in Rural Ireland</a></span>
+          <span class="s">With Kate Bluett. <i>Online Journal of Communication and Media Technologies</i> 11(3).</span>
+        </li>
+        <li>
+          <span class="status">PhD · 2018</span>
+          <span class="t">Audio production in an international youth development setting</span>
+          <span class="s">A pedagogical study of youth radio in Ireland and South Africa. Mary Immaculate College, University of Limerick.</span>
+        </li>
+        <li>
+          <span class="status">Talks</span>
+          <span class="t">RAI radio history, University of Rome, 2019 · Audire, Braga, 2022</span>
+        </li>
+        <li>
+          <span class="status">In preparation</span>
+          <span class="t">Practice-research articles</span>
+          <span class="s">On producing student audio for a public audience.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <div class="sec-head">
+      <h2>Teaching</h2>
+      <div class="stack">
+        <p>I chose teaching over a career in industry because that is where my heart is. At AUBG I built the department's audio track, co-chair the Department of Journalism, Media and Communication, and have supervised 20+ capstone and independent studies.</p>
+        <figure class="teach-photo">
+          <img data-full="media/attentive-student.jpg" src="media/img-04.jpg" width="640" height="640" alt="Jason at a flip chart, explaining a drawing to a white dog sitting attentively in front of it">
+          <figcaption>My most attentive student.</figcaption>
+        </figure>
+        <ul class="items">
+          <li><span class="t">Applied Audio</span><span class="s">Field recording to a live public show. The 2026 class made <i>Song of Bistritsa</i>.</span></li>
+          <li><span class="t">Sound Editing</span><span class="s">Audio editing for journalism students, who also ran the technical side of <i>Lake Voices</i>.</span></li>
+          <li><span class="t">Broadcast Producing · Digital Storytelling</span><span class="s">Current affairs audio class with a weekly show on Radio AURA.</span></li>
+          <li><span class="t">Before AUBG</span><span class="s">Griffith College Cork, Mary Immaculate College, and masterclasses for NHK in Tokyo.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="sec-head">
+      <h2>About</h2>
+      <div class="stack">
+        <figure class="teach-photo" style="max-width:240px">
+          <img data-full="media/already-listening.jpg" src="media/img-05.jpg" width="520" height="714" alt="Jason as a baby in a striped romper, wearing big headphones beside a hi-fi and a shelf of records">
+          <figcaption>Already listening.</figcaption>
+        </figure>
+        <p>I'm from Cork. I came to radio through community stations and current affairs, and I still make work for the airwaves: documentaries, reports, field recordings and pieces for live audiences. My documentaries have won the Prix Italia, two golds at the New York Festivals and two Irish radio awards for best documentary.</p>
+        <p>Most of what I make is about people at the edges, whether that's young people in West Clare, Roma teenagers in Blagoevgrad, or migrant fishermen at Lake Kivu in Central Africa. Lately it has turned towards listening itself: field recordings, installations and live work. Since 2018 I've lived in Bulgaria, teaching at the American University.</p>
+        <ul class="recog" aria-label="Recognition">
+          <li><span class="y">2017</span><span class="k">Prix Italia, Best Documentary <span>· No Time To Lose</span></span></li>
+          <li><span class="y">2017</span><span class="k">New York Festivals Gold · PPI Gold <span>· No Time To Lose</span></span></li>
+          <li><span class="y">2017</span><span class="k">New York Festivals Grand Jury</span></li>
+          <li><span class="y">2016</span><span class="k">New York Festivals Gold · PPI Gold <span>· Open Verdict</span></span></li>
+          <li><span class="y">2016–17</span><span class="k">Prix Europa finalist ×2 · Rose d'Or finalist</span></li>
+          <li><span class="y">2015</span><span class="k">Simon Cumbers Media Fund</span></li>
+          <li><span class="y">2012</span><span class="k">PPI Newcomer of the Year</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head">
+      <h2>Contact</h2>
+      <div class="stack">
+        <div class="contact-row">
+          <span class="email" id="email">jmurphy@aubg.edu</span>
+          <button class="copy" id="copyBtn" type="button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <figure class="closing-art">
+    <img src="media/quiet-storm.jpg" width="1400" height="1063" alt="Quiet Storm, an abstract painting: a dark, smoky circle of black and grey spreading across a white canvas, streaked on its right side">
+    <figcaption><i>Quiet Storm</i>, acrylic on canvas, 2026 · Jason Patrick Murphy</figcaption>
+  </figure>
+
+  <footer>
+    <span>© 2026 Jason Patrick Murphy</span>
+    <span>Cork · Blagoevgrad</span>
+  </footer>
+</div>
+
+
+<script>
+(function () {
+  // Opening sound: the waveform is the real audio, and doubles as its timeline.
+  const PEAKS = [0.244, 0.395, 0.245, 0.243, 0.526, 1.0, 0.902, 0.395, 0.406, 0.647, 0.58, 0.299, 0.198, 0.196, 0.252, 0.21, 0.194, 0.184, 0.242, 0.222, 0.185, 0.215, 0.278, 0.242, 0.201, 0.346, 0.365, 0.311, 0.323, 0.31, 0.336, 0.279, 0.307, 0.251, 0.252, 0.225, 0.202, 0.21, 0.184, 0.229, 0.205, 0.201, 0.168, 0.21, 0.239, 0.184, 0.185, 0.347, 0.386, 0.372, 0.265, 0.223, 0.237, 0.216, 0.225, 0.257, 0.229, 0.247, 0.2, 0.185, 0.22, 0.247, 0.18, 0.174, 0.208, 0.249, 0.183, 0.179, 0.261, 0.32, 0.238, 0.191, 0.189, 0.218, 0.234, 0.261, 0.336, 0.36, 0.229, 0.276, 0.607, 0.278, 0.224, 0.267, 0.185, 0.274, 0.261, 0.765, 0.326, 0.223, 0.439, 0.255, 0.212, 0.225, 0.791, 0.367, 0.215, 0.176, 0.223, 0.209, 0.161, 0.167, 0.209, 0.204, 0.19, 0.144, 0.185, 0.229, 0.202, 0.17, 0.192, 0.19, 0.229, 0.173, 0.152, 0.221, 0.199, 0.194, 0.175, 0.219, 0.227, 0.173, 0.152, 0.163, 0.2, 0.199, 0.166, 0.176, 0.185, 0.183, 0.169, 0.163, 0.223, 0.205, 0.185, 0.145, 0.255, 0.253, 0.197, 0.306, 0.235, 0.195, 0.185, 0.215, 0.213, 0.307, 0.229, 0.178, 0.266, 0.33, 0.371, 0.619, 0.774, 0.29, 0.254, 0.191, 0.389, 0.257, 0.247, 0.213, 0.254, 0.374, 0.326, 0.453, 0.333, 0.521, 0.464, 0.282, 0.439, 0.673, 0.773, 0.52, 0.273, 0.256, 0.221, 0.251, 0.21, 0.2, 0.565, 0.508, 0.383, 0.319, 0.343, 0.322, 0.281, 0.299, 0.382, 0.629, 0.5, 0.325, 0.337, 0.579, 0.29, 0.214, 0.189, 0.201, 0.237, 0.246, 0.179, 0.195, 0.244, 0.253, 0.187, 0.177, 0.245, 0.218, 0.189, 0.157, 0.239, 0.231, 0.227, 0.176, 0.204, 0.245, 0.24, 0.186, 0.169, 0.261, 0.255, 0.202, 0.187, 0.258, 0.243, 0.19, 0.167, 0.25, 0.232, 0.201, 0.171, 0.2, 0.237, 0.208, 0.151, 0.154, 0.269, 0.333, 0.2, 0.201, 0.274, 0.23, 0.209, 0.166, 0.291, 0.232, 0.207, 0.178, 0.215, 0.258, 0.271, 0.3, 0.231, 0.252, 0.256, 0.208, 0.338, 0.425, 0.263, 0.182, 0.171, 0.245, 0.385, 0.295, 0.365, 0.248, 0.239, 0.216, 0.173, 0.214, 0.251, 0.37, 0.466, 0.267, 0.246, 0.249, 0.206, 0.239, 0.23, 0.282, 0.498, 0.224, 0.342, 0.348, 0.255, 0.174, 0.204, 0.246, 0.341, 0.334, 0.365, 0.274, 0.284, 0.299, 0.283, 0.288, 0.238, 0.192, 0.166, 0.208, 0.192, 0.152];
+  const c = document.getElementById('wave');
+  const audio = new Audio();
+  audio.preload = 'none';
+  audio.src = 'media/opening-sound.m4a';
+  const playBtn = document.getElementById('playBtn'), playLabel = document.getElementById('playLabel'), playTime = document.getElementById('playTime');
+  let hoverT = null, raf = 0;
+  const DUR_FALLBACK = 17;
+  const dur = () => (isFinite(audio.duration) && audio.duration > 0) ? audio.duration : DUR_FALLBACK;
+  const fmt = sec => { sec = Math.max(0, Math.round(sec)); return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0'); };
+  function draw() {
+    const dpr = window.devicePixelRatio || 1;
+    const w = c.clientWidth, h = c.clientHeight;
+    if (!w) return;
+    c.width = w * dpr; c.height = h * dpr;
+    const ctx = c.getContext('2d');
+    ctx.scale(dpr, dpr);
+    const css = getComputedStyle(document.documentElement);
+    const ink = css.getPropertyValue('--muted').trim();
+    const acc = css.getPropertyValue('--accent').trim();
+    const prog = audio.currentTime / dur();
+    const step = 3, mid = h / 2;
+    for (let x = 0; x < w; x += step) {
+      const t = x / w;
+      const v = PEAKS[Math.min(PEAKS.length - 1, Math.floor(t * PEAKS.length))];
+      const a = Math.max(1, v * (h / 2 - 2));
+      const played = (audio.currentTime > 0 || !audio.paused) && t <= prog;
+      ctx.fillStyle = played ? acc : ink;
+      ctx.globalAlpha = played ? 1 : (hoverT !== null && t <= hoverT ? 0.75 : 0.45);
+      ctx.fillRect(x, mid - a, 1.4, a * 2);
+    }
+    ctx.globalAlpha = 1;
+    if (audio.currentTime > 0 || !audio.paused) { ctx.fillStyle = acc; ctx.fillRect(Math.min(w - 1.5, prog * w), 2, 1.5, h - 4); }
+    c.setAttribute('aria-valuenow', String(Math.round(audio.currentTime)));
+    c.setAttribute('aria-valuetext', fmt(audio.currentTime) + ' of ' + fmt(dur()));
+  }
+  function syncUi() {
+    const playing = !audio.paused && !audio.ended;
+    playBtn.classList.toggle('playing', playing);
+    playBtn.setAttribute('aria-label', playing ? 'Pause the opening sound' : 'Play the opening sound');
+    playLabel.textContent = playing ? 'Pause' : 'Listen';
+    playTime.textContent = (audio.currentTime > 0 && !audio.ended) ? fmt(audio.currentTime) + ' / ' + fmt(dur()) : fmt(dur());
+  }
+  function loop() { draw(); syncUi(); if (!audio.paused) raf = requestAnimationFrame(loop); }
+  function play() { const pr = audio.play(); if (pr && pr.catch) pr.catch(() => syncUi()); }
+  audio.addEventListener('play', () => { cancelAnimationFrame(raf); loop(); });
+  audio.addEventListener('pause', () => { draw(); syncUi(); });
+  audio.addEventListener('ended', () => { audio.currentTime = 0; draw(); syncUi(); });
+  audio.addEventListener('loadedmetadata', () => { draw(); syncUi(); });
+  playBtn.addEventListener('click', () => { if (audio.paused) play(); else audio.pause(); });
+  function seekTo(t) {
+    t = Math.min(0.999, Math.max(0, t));
+    const go = () => { audio.currentTime = t * dur(); draw(); syncUi(); };
+    if (audio.readyState >= 1) go(); else audio.addEventListener('loadedmetadata', go, { once: true });
+  }
+  const tAt = e => { const r = c.getBoundingClientRect(); return (e.clientX - r.left) / r.width; };
+  c.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') { hoverT = tAt(e); if (audio.paused) draw(); } });
+  c.addEventListener('pointerleave', () => { hoverT = null; if (audio.paused) draw(); });
+  c.addEventListener('click', e => { seekTo(tAt(e)); if (audio.paused) play(); });
+  c.addEventListener('keydown', e => {
+    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (audio.paused) play(); else audio.pause(); }
+    else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); seekTo((audio.currentTime + (e.key === 'ArrowRight' ? 5 : -5)) / dur()); }
+  });
+  draw(); syncUi();
+  window.addEventListener('resize', draw);
+
+  document.querySelectorAll('a[aria-disabled="true"]').forEach(a => a.addEventListener('click', e => e.preventDefault()));
+  const btn = document.getElementById('copyBtn');
+  btn.addEventListener('click', () => {
+    const el = document.getElementById('email');
+    const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    if (editing) return;
+    try { navigator.clipboard.writeText(el.textContent).then(() => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy', 1600); }).catch(sel); } catch (e) { sel(); }
+  });
+
+  const editing = false;
+
+  // ---- Click to enlarge ----
+  const lb = document.createElement('div');
+  lb.className = 'lb'; lb.hidden = true;
+  lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-modal', 'true'); lb.setAttribute('aria-label', 'Enlarged image');
+  lb.innerHTML = '<button class="lb-close" type="button">Close</button><div class="lb-stage"></div><div class="lb-cap"></div>';
+  document.body.appendChild(lb);
+  const stage = lb.querySelector('.lb-stage'), cap = lb.querySelector('.lb-cap'), closeBtn = lb.querySelector('.lb-close');
+  let lastFocus = null;
+  function fitPoster(box) {
+    const sc = Math.min((window.innerWidth - 32) / 1080, (window.innerHeight - 140) / 1350);
+    box.style.width = (1080 * sc) + 'px'; box.style.height = (1350 * sc) + 'px';
+    box.style.setProperty('--ls', sc);
+  }
+  function openLb(el) {
+    if (editing) return;
+    lastFocus = document.activeElement;
+    stage.textContent = '';
+    if (el.classList.contains('poster-thumb')) {
+      const box = document.createElement('div'); box.className = 'lb-poster';
+      box.appendChild(el.querySelector('.poster').cloneNode(true));
+      fitPoster(box); stage.appendChild(box);
+    } else {
+      const im = document.createElement('img');
+      im.className = 'lb-img'; im.alt = el.alt || '';
+      im.src = el.getAttribute('data-full') || el.currentSrc || el.src;
+      stage.appendChild(im);
+    }
+    const fig = el.closest('figure'); const fc = fig && fig.querySelector('figcaption');
+    cap.textContent = fc ? fc.textContent : '';
+    lb.hidden = false; document.documentElement.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+  function closeLb() {
+    lb.hidden = true; stage.textContent = ''; document.documentElement.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  lb.addEventListener('click', () => closeLb());
+  document.addEventListener('keydown', e => {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') closeLb();
+    else if (e.key === 'Tab') { e.preventDefault(); closeBtn.focus(); }
+  });
+  window.addEventListener('resize', () => { const box = stage.querySelector('.lb-poster'); if (box && !lb.hidden) fitPoster(box); });
+  document.querySelectorAll('.thumb img, .teach-photo img, .wide-photo img, .closing-art img, .poster-thumb').forEach(el => {
+    el.classList.add('zoomable'); el.tabIndex = 0;
+    if (el.tagName === 'IMG') el.setAttribute('role', 'button');
+    el.setAttribute('aria-label', 'Enlarge: ' + (el.getAttribute('alt') || el.getAttribute('aria-label') || 'image'));
+    el.addEventListener('click', e => { e.preventDefault(); openLb(el); });
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLb(el); } });
+  });
+
+})();
+</script>
+</body>
+</html>
